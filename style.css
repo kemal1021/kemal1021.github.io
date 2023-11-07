@@ -3311,6 +3311,9 @@ padding:15px 0 0 0;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
 }
+.content-block .boxs:hover {
+  background-color: #FFFFFF;
+}
 .content-block .boxs img{
   padding-top: 1rem;
   padding-left: 1rem;
@@ -3319,6 +3322,7 @@ padding:15px 0 0 0;
 }
 .content-block .pages-box{
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 13px;
@@ -4151,4 +4155,39 @@ border: 0.4px solid #ffffff;
       right: 8px;
       top: 38px;
   }
+}
+/*===============================================*/
+/* 25. German VDI Method Data */
+/*===============================================*/
+
+.content-block .head {
+  display: flex;
+}
+
+.content-block .table-data {}
+
+.table-data table thead tr td {
+  padding: 0.5rem;
+  border: 0.4px solid #ffffff;
+  color: #FFFFFF;
+  background-color: rgba(0, 193, 140, 1);
+  text-align: center;
+  font-size: 12px;
+  width: 35%;
+}
+
+.table-data table tbody tr td {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-family: 'Verdana';
+  font-size: 10px;
+  text-align: center;
+}
+
+.table-data tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-data tr:hover {
+  background-color: #ddd;
 }
