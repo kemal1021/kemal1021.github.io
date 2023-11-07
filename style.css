@@ -2447,6 +2447,19 @@ font-style:italic;
 /* 12. FORMS */
 /*===============================================*/	
 /* 12.1 LOGIN FORM */
+.login {
+  width: 100%;
+  text-align: center;
+}
+
+.login a button {
+  width: 70%;
+  background-color: rgba(48, 204, 162, 1);
+  border: none;
+  height: 40px;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
 .loginform{
 width:90%;
 padding:0 0 15px 5%;
@@ -2524,7 +2537,7 @@ font-size:12px;
 }
 .forgot_pass a{
 font-weight:700;
-color:#86d7ec;
+color: rgba(119, 158, 227, 1);
 }
 .img_screen{
   display: flex;
@@ -2548,11 +2561,11 @@ padding:0px 0 10px 0;
 font-size:16px;
 }
 .forgot_bottom a{
-background-color:#86d7ec;
+background-color: rgba(119, 158, 227, 1);
 color:#fff;
 font-weight:300;
 font-size:16px;
-padding:5px 10px;
+padding: 6px 20px;
 border-radius:15px;
 }
 .signup_social{
