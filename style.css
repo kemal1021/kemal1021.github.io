@@ -3272,77 +3272,83 @@ padding:15px 0 0 0;
 /* 16. MEDIA SURVEY DATA */
 /*===============================================*/	
 
-.search-container {
-  text-align: center;
-  display: flex;
-  background-color: #fff;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.data-page .header-survey .search {
+  text-align: end;
+  padding-right: 1.3rem;
+  padding-top: 1.3rem;
 }
 
-/* Gaya input pencarian */
-.search-input {
-  border: none;
-  padding: 10px 15px;
-  width: 300px;
-  font-size: 16px;
-  border-radius: 25px 0 0 25px;
+.data-page {
+  height: 100%;
+  background-color: #0b486b;
 }
-.content-block .header-survey{
-  padding-bottom: 2rem;
-  text-align: center;
-  padding-top: 2rem;
+.data-survey .name-data-survey {
+  padding-left: 1.3rem;
+  padding-top: 0.1rem;
 }
-.data .pages-content{
+.data-survey .name-data-survey span {
+  font-weight: 900;
+  color: #0b486b;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+.data-page .header-survey {
+  height: 24%;
+}
+
+.data-page .header-survey span {
+  color: #FFFFFF;
+  font-size: 25px;
+  font-family: 'Verdana';
+  font-weight: 800;
+}
+.data-page .header-survey a img {
+  width: 20px;
+}
+.data-page .data-survey .title-data {
+  padding: 1.8rem;
+  padding-left: 2rem;
+  font-size: 13px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.data-page .header-survey .title-header {
+  display: flex;
+  align-items: flex-end;
+  height: 65%;
+  padding-left: 1rem;
+}
+.data-page .data-survey {
+  height: 80%;
+  box-shadow: 4px 8px 8px 12 rgba(0, 0, 0, 0.883), 0 6px 10px 0 rgba(0, 0, 0, 0.767);
+  background-color: #ffffff;
+  border-top-right-radius: 2.2rem;
+  border-top-left-radius: 2.2rem;
+}
+
+.data .pages-content {
   text-align: center;
   display: flex;
   justify-content: center;
 }
-.content-block .header-survey span {
-  font-size: 33px;
-  font-family: 'Verdana';
-  color: rgba(17, 35, 64, 1);
+
+.boxs {
+  width: 100%;
+  display: flex;
+  padding-left: 1.5rem;
+  align-items: center;
+  height: 70px;
 }
-.content-block .boxs{
-  width: 162px;
-  height: 130px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0), 0 6px 10px 0 rgba(0, 0, 0, 0.117);
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255);
-}
-.content-block .boxs:hover {
+.boxs:hover {
   background-color: #FFFFFF;
 }
-.content-block .boxs img{
-  padding-top: 1rem;
-  padding-left: 1rem;
-  height: 40px;
-  
+.boxs img {
+  height: 45px;
 }
-.content-block .pages-box{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 13px;
-  max-height: 550px;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-
-.content-block .title-box{
-  padding-left: 1rem;
-  padding-top: 5px;
-}
-.content-block .title-box span{
-  font-size: 14px;
-  color: rgba(17, 35, 64, 1);
-  font-family: 'geneva';
-}
-.content-block .date-box{
-  padding-left: 1rem;
+.date-box {
   font-size: 11px;
+  font-family: sans-serif;
+    color: #1d1c1cb4;
 }
 /* Untuk browser berbasis WebKit (Chrome, Safari) */
 .pages-box::-webkit-scrollbar {
@@ -3625,6 +3631,7 @@ padding:15px 0 0 0;
 }
 .payment-radio-container input[type="radio"] {
   display: none;
+  border-radius: 15px;
 }
 input[type="radio"]:not(:disabled) ~ .pplogo-container {
   cursor: pointer;
@@ -3638,13 +3645,17 @@ input[type="radio"]:disabled ~ .pplogo-container {
   justify-content:canter;
   align-items:center;
   background: white;
-  padding: 0.6rem;
+  padding: 0.8rem;
   box-shadow: 2px 3px 6px -2px rgba(0, 0, 0, 0.262);
   position: relative;
+  border-radius: 0.5rem;
 }
 input[type="radio"]:checked + .pplogo-container {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 193, 140, 1);
+  /* color: rgb(255, 255, 255); */
+    /* background-color: rgb(88, 216, 182); */
+    background-color: rgba(0, 193, 142, 0.075);
+    border: 0.5px solid rgba(0, 193, 140, 1);
+    color: rgba(0, 193, 142, 0.742);
 }
 /* input[type="radio"]:checked + .payment-radio-container::after {
 } */
@@ -3655,10 +3666,10 @@ input[type="radio"]:checked + .pplogo-container {
 .btn-survey a button{
   background-color: rgba(0, 193, 140, 1);
   color: rgb(255, 255, 255);
-  height: 40px;
+  height: 43px;
   border-radius: 10px;
   border: none;
-  width: 200px;
+  width: 80%;
 }
 
 /*===============================================*/
@@ -3679,7 +3690,8 @@ input[type="radio"]:checked + .pplogo-container {
   padding: 0.2rem;
   width: 100%;
   padding-top: 1.2rem;
-  max-height: 600px;
+    max-height: 900px;
+      height: 70vh;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
@@ -3705,7 +3717,7 @@ input[type="radio"]:checked + .pplogo-container {
   height: 40px;
   border-radius: 10px;
   border: none;
-  width: 200px;
+  width: 70%;
 }
 
 .method::-webkit-scrollbar {
@@ -3739,25 +3751,35 @@ input[type="radio"]:checked + .pplogo-container {
 /* 21. FORM SURVEY */
 /*===============================================*/	
 
-.content-block .form-top{
-  padding-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  grid-gap: 13px;
+.maps-form-survey iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.scroll {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.content-block .form-survey {
+  padding-top: 1rem;
   text-align: center;
   width: 100%;
+  display: grid;
+    row-gap: 15px;
 }
-.content-block .form-top input[type=date]{
-  color:rgba(0, 0, 0, 0.523);
-  padding-left: 1rem;
+.content-block .form-survey input {
+  color: rgba(0, 0, 0, 0.523);
+  width: 100%;
+  height: 35px;
+  border: none;
+  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.101); */
+  border-bottom: 0.7px solid rgba(0, 0, 0, 0.465);
+  /* border: 0.5px solid rgba(0, 193, 142, 0.909); */
+  /* background-color: rgba(0, 193, 142, 0.145); */
+  border-radius: 2px;
 }
-.content-block .form-top .obser-name{
-  color:rgba(17, 35, 64, 1);
-  font-size: 18px;
-  border: 0.4px solid rgba(0, 0, 0, 0.317);
-  border-radius: 5px;
-  padding: 5px;
-}
+
 *:before,
 *:after{
     padding: 0;
@@ -3772,23 +3794,22 @@ input[type="radio"]:checked + .pplogo-container {
     border-radius: 5px;
 }
 
-.content-block .form-maps{
-  padding-top: 2rem;
+.content-block .form-maps {
   text-align: center;
   width: 100%;
   color:rgba(17, 35, 64, 1);
   font-size: 24px;
   font-family: 'Verdana';
 }
-.content-block .form-maps .form-check{
+.form-check {
   font-size: 14px;
   text-align: start;
   padding-left: 1rem;
 }
-.content-block .form-maps .form-check .checkbox{
+.checkbox {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 13px;
+  grid-gap: 6px;
   padding-top: 1rem;
 }
 
@@ -3797,13 +3818,13 @@ input[type=checkbox]{
   color: #00ff62;
 }
 
-.content-block .form-maps .btn-start-observation {
+.btn-start-observation {
   padding-top: 2rem;
 }
 .distance{
   padding-bottom: 1rem;
 }
-.content-block .form-maps a button{
+.btn-start-observation a button {
   width: 50%;
   height: 40px;
   background-color: rgba(0, 193, 140, 1);
@@ -3920,8 +3941,11 @@ border: none;
   padding-top: 2rem;
   width: 100%;
 }
+ .maps-summary iframe {
+   height: 300px;
+ }
 .content-block .table-summary{
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 .table-summary table{
   width: 100%;
