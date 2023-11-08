@@ -3292,15 +3292,15 @@ padding:15px 0 0 0;
 .content-block .header-survey{
   padding-bottom: 2rem;
   text-align: center;
+  padding-top: 2rem;
 }
 .data .pages-content{
   text-align: center;
   display: flex;
   justify-content: center;
 }
-.content-block .header-survey h3{
-  padding-top: 1rem;
-  font-size: 30px;
+.content-block .header-survey span {
+  font-size: 33px;
   font-family: 'Verdana';
   color: rgba(17, 35, 64, 1);
 }
@@ -3564,15 +3564,15 @@ padding:15px 0 0 0;
 
 .content-block .settings {
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
-.content-block .settings h3{
+.content-block .settings span {
   font-family:'geneva' ;
   font-size: 27px;
   color: rgba(17, 35, 64, 1);
 }
 .content-block .settings .menu-settings{
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   width: 100%;
 }
 .content-block .settings .menu-settings .item-settings{
