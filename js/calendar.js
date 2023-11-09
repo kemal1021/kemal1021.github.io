@@ -13,7 +13,9 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 const currentDay = currentDate.getDate();
 const currentDayName = getDayName(currentDate.getDay());
-// live.textContent = `${currentDayName}, ${currentDay} ${getMonthName(currentMonth)} ${currentYear}`;
+live.textContent = `${currentDayName}, ${currentDay} ${getMonthName(
+  currentMonth
+)} ${currentYear}`;
 date.textContent =  `${currentDay}`;
 day_select.textContent =  `${currentDayName}`;
 month_select.textContent =  `${getMonthName(currentMonth)}`;
